@@ -14,5 +14,7 @@ public class rope {
 			time++;
 		}
 		System.out.println("需要對折：" + time + "次");
+		
+		sc.close();
 	}	
 }

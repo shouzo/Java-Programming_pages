@@ -14,6 +14,8 @@ public class year {
 		else if ((year % 4 == 0) && (year % 100 != 0)) 
 			System.out.println("閏年");
 		else
-			System.out.println("平年");		
+			System.out.println("平年");
+		
+		sc.close();
 	}
 }

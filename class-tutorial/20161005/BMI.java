@@ -25,6 +25,8 @@ public class BMI {
 		System.out.println("年齡：" + age);
 		System.out.println("身高：" + height);
 		System.out.println("體重：" + weight);
-		System.out.println("BMI：" + bmi);		
+		System.out.println("BMI：" + bmi);
+		
+		sc.close();
 	}
 }
