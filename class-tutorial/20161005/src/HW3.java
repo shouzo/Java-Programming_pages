@@ -30,7 +30,7 @@ public class HW3 {
 		System.out.println("兩個骰子相加後點數為：" + result);
 		
 		
-		// 先判斷旗標，是否為第一次進入判斷程序
+		// 第一次進入判斷程序
 		if (flag == 1) {	// 第一次進入			
 			// 如果加總結果是 7 或 11，玩家贏了
 			if (result == 7 || result == 11) {
@@ -47,22 +47,22 @@ public class HW3 {
 			// 如果是其他情況，則準備進入下一回合
 			else {	
 				key = result;	// 將第一次的投擲結果存入保存旗標內
-				return 1;
+				return 1;				
 			}
 		}
 		
-		// 並非第一次進入
-		else if (flag != 1 && result == key) {
-			if (result == key) {
-				System.out.println("恭喜！你贏了！！");
-				return 0;
-			}
-			
-			else if (result == 7) {
+		// 並非第一次進入判斷程序
+		if (flag != 1) {
+			if (result == 7) {
 				System.out.println("哇！你輸了！！");
 				return 0;
 			}
 			
+			else if (result == key) {
+				System.out.println("恭喜！你贏了！！");
+				return 0;
+			}
+						
 			// 如果沒有得到目標點數或是結果為 7，則繼續進入下一回合
 			else {
 				return 1;
