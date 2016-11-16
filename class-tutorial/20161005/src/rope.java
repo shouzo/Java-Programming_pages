@@ -8,7 +8,7 @@ public class rope {
 		
 		System.out.println("請輸入繩子的長度：");
 		length = sc.nextFloat();
-		while ( length >= 20)
+		while (length >= 20)
 		{
 			length = length / 2;
 			time++;
